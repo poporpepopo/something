@@ -5,10 +5,9 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var now;
 			$(function(){
 				setInterval(function(){
-					now = new Date();
+					var now = new Date();
 					$('title').html(now.toLocaleDateString() + '\t' + now.toLocaleTimeString());
 				}, 1000);
 			});
