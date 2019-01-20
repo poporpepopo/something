@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>‚±‚±‚ªŽžŒv‚É‚È‚é</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var now;
+			$(function(){
+				setInterval(function(){
+					now = new Date();
+					$('title').html(now.toLocaleDateString() + '\t' + now.toLocaleTimeString());
+				}, 1000);
+			});
+		</script>
+
+		<p>clock</p>
+
+	</body>
+<html>
